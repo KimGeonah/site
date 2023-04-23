@@ -662,7 +662,7 @@ body{
     .side_menu li{
         height: 80px;
         line-height: 80px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .side_menu li:first-child{
@@ -812,7 +812,7 @@ body{
 
     .web_lnb_menu_outer .web_lnb_menu li{
         float: left;
-        height: 50px;
+        height: 60px;
         line-height: 60px;
         font-size: 18px;
         margin-right: 35px;
