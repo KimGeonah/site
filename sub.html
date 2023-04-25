@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Comic+Neue:wght@300&family=Gaegu:wght@700&family=Gowun+Dodum&family=Hahmlet:wght@100&family=IBM+Plex+Sans+KR&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+
+    
 </head>
 
 
@@ -50,7 +52,7 @@
 
             <div class="logo">
                 <a href="index.html">
-                    <img src="./img/logo01.jpg" alt="체험뷰 로고">
+                    <img src="./img/logo01.png" alt="체험뷰 로고">
                 </a>
             </div>
 
@@ -107,7 +109,14 @@
 
             <div class="web_logo">
                 <a href="index.html">
-                    <img src="./img/logo01.jpg" alt="체험뷰 로고">
+                    <div class='box'>
+                        <div class='wave -one'></div>
+                        <div class='wave -two'></div>
+                        <div class='wave -three'></div>
+                        <div class='title'><img src="./img/logo01.png" alt="체험뷰 로고"></div>
+                      </div>
+                
+
                 </a>
             </div>
 
@@ -126,9 +135,9 @@
 
 
                         <ul>
-                            <li><a href="index.html">마감임박</a></li>
-                            <li><a href="index.html">지금인기</a></li>
-                            <li><a href="index.html">오늘오픈</a></li>
+                            <li><a href="inex.html">마감임박</a></li>
+                            <li><a href="inex.html">지금인기</a></li>
+                            <li><a href="inex.html">오늘오픈</a></li>
                         </ul>
 
                         <ul>
@@ -170,17 +179,18 @@
     </header><!-- web_header_outer -->
 
 
+
     <nav class="title_box">
         <h3>배송형</h3>
 
         <ul class="title_menu">
-            <li><a href="index.html">전체</a></li>
-            <li><a href="index.html">식품</a></li>
-            <li><a href="index.html">뷰티</a></li>
-            <li><a href="index.html">패션</a></li>
-            <li><a href="index.html">도서</a></li>
-            <li><a href="index.html">디지털</a></li>
-            <li><a href="index.html">반려동물</a></li>
+            <li>전체</li>
+            <li>식품</li>
+            <li>뷰티</li>
+            <li>패션</li>
+            <li>도서</li>
+            <li>디지털</li>
+            <li>반려동물</li>
         </ul>
 
         <select name="title_select" id="select_box">
@@ -641,6 +651,17 @@
                 </select>
             </div>
 
+            <div class="footer_sns_box">
+                <ul>
+                    <li><div class="youtube footer_sns"><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube footer_sns"></i></a></div></li>
+                    <li><div class="insta footer_sns"><a href="https://ko-kr.facebook.com/" target="_blank"><i class="fab fa-facebook-square footer_sns"></i></a></div></li>
+                    <li><div class="blog footer_sns"><a href="https://section.blog.naver.com/" target="_blank"><i class="fas fa-blog footer_sns"></i></a></div></li>
+                </ul>
+            </div>
+
+
+
+
             <ul>
                 <li class="footer_company">
                     <p>대표이사 : 이상표 <span></span>&nbsp;사업자등록번호 : 813-87-01236</p>
@@ -682,6 +703,25 @@
 
         </footer>
     </div><!-- footer -->
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+
+        $(function(){
+    
+        const content = $('.content_box .content ul li .content_text p:contains("오늘 마감")')
+    
+        content.addClass('effect')
+    
+        })
+    
+    
+        </script>
+
 
 
 </body>
