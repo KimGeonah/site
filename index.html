@@ -183,11 +183,32 @@
     </header><!-- web_header_outer -->
 
 
-    <section class="main">
-        CONTENT
+    <div class="main">
+        <div class="main01 main_content">
+            <img src="./img/visual_main01.png" alt="main01">
+            <p class="main_title">러쉬 신제품 발매<br>대규모체험단 모집</p>
+            <p class="sub_title">[EVENT] 체험뷰에서만 만나볼 수 있는 특별한 러쉬!</p>
+        </div>
 
-    </section>
+        <div class="main02 main_content">
+            <img src="./img/visual_main02.png" alt="main02">
+            <p class="main_title">친구 초대하고 행운 더하기</p>
+            <p class="sub_title">[EVENT] 신규회원과 함께 행운의 선물 받기!</p>
+        </div>
 
+        <div class="main03 main_content">
+            <img src="./img/visual_main03.png" alt="main03">
+            <p class="main_title" style="color: white;">경주관광청<br>별빛벚꽃축제</p>
+            <p class="sub_title"  style="color: white;">[EVENT] 경주의 별빛 벚꽃을 관람하시고 후기를 남겨주세요!</p>
+        </div>
+
+        <div class="main04 main_content">
+            <img src="./img/visual_main04.png" alt="main04">
+            <p class="main_title">4월 리뷰왕 선발 대회!</p>
+            <p class="sub_title">[EVENT] 신선한 리뷰 남기고 리뷰왕에 도전해 보세요!</p>
+        </div>
+    </div>
+                  
 
     <div class="content">
 
@@ -240,7 +261,7 @@
         <div><img src="./img/main_pc_01.jpg"></div>
         <div><img src="./img/main_pc_02.jpg"></div>
         <div><img src="./img/main_pc_03.jpg"></div>
-</div><!-- visual_main -->
+    </div><!-- visual_main -->
 
 
     <div class="tab_menu_outer">
@@ -526,6 +547,19 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+
+
+        $(document).ready(function () {
+            $('.main').slick({
+                autoplay: true,
+                dots : true,
+                speed:2000
+            });
+        });
+
+
+
+
         $(document).ready(function () {
             $('.visual_main').slick({
                 autoplay: true,

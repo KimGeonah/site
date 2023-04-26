@@ -279,18 +279,108 @@ body{font-family: 'Noto Sans KR', sans-serif;}
   
 
 
-    /* *************** main ******************** */
+/* *************** main ******************** */
 
     .main{
-        width: 100%;height: 300px;
-        line-height: 300px;
+        width: 100%;
         margin: 0 auto;
-        background-color: pink;
-        text-align: center;
-        margin-top: 135px;
+        position: relative;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .main .main_content{
+        position: relative;
+    }
+
+    .main .main_content p{
+        position: absolute;
+        bottom: 0;
     }
 
 
+    .main .main_content p.main_title{
+        width: 240px;
+        position: absolute;
+        bottom: 35px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+
+
+    .main .main_content p.sub_title{
+        position: absolute;
+        bottom: 15px;
+        margin-left: 30px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+
+
+    .main img{
+        width: 100%;
+    }
+
+    .main .slick-arrow{
+        border: none;
+        font-size: 0;
+        visibility: hidden;
+    }
+    
+
+    .main .slick-prev::before{
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        visibility: visible;
+        position: absolute;
+        top: 40%;
+        left: 15px;
+        font-size: 30px;
+        color: white;
+        opacity: 0.5;
+        z-index: 11;
+    }
+    
+    
+    .main .slick-next::before{
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        visibility: visible;
+        position: absolute;
+        top: 40%;
+        right: 15px;
+        font-size: 30px;
+        color: white;
+        opacity: 0.5;
+    }
+
+    .main .slick-dots {
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main .slick-dots button {
+        font-size: 0;
+        float: left;
+        width: 32px;
+        height: 2px;
+        margin-right: 5px;
+        border: none;
+    }
+
+
+    .main .slick-dots .slick-active button{
+        background-color: black;
+        border: none;
+        height: 2px;
+    }
 
 /* *************** visual_main ******************** */
 
@@ -344,7 +434,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .content{
     padding: 0 10px;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .content h2{
@@ -510,13 +600,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     margin-left: 15%;
 }
 
-.slick-arrow{
+.content_box .slick-arrow{
     border: none;
     font-size: 0;
     visibility: hidden;
 }
 
-.slick-prev::before{
+.content_box .slick-prev::before{
     content: "\f053";
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
@@ -529,7 +619,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     opacity: 0.5;
 }
 
-.slick-next::before{
+.content_box .slick-next::before{
     content: "\f054";
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
@@ -765,7 +855,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     color: #666363;
     background-color: #fdf904;
     border-radius: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #f9f284;
 }
 
 .footer .btn ul li.sns_btn a i{
@@ -1309,6 +1399,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         background-color: rgba(249, 230, 177, 0.788);
     }
 
+    .web_lnb_menu_outer .web_lnb_menu li:hover a{
+        border-bottom: 1px solid rgb(237,125,49);
+        box-sizing: border-box;
+    }
+
     .web_lnb_menu_outer:hover .lnb_menu_down_box{
         display: block;
         position: absolute;
@@ -1319,10 +1414,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     }
 
 
-    .web_lnb_menu_outer .web_lnb_menu li:hover a{
-        border-bottom: 1px solid rgb(237,125,49);
-        box-sizing: border-box;
-    }
+
 
     .lnb_menu_down{
         width: 1024px;
