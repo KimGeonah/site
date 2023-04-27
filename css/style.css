@@ -286,7 +286,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         margin: 0 auto;
         position: relative;
         height: auto;
-        margin-top: 100px;
+        margin-top: 85px;
     }
 
     .main .main_content{
@@ -302,18 +302,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     .main .main_content p.main_title{
         width: 240px;
         position: absolute;
-        bottom: 35px;
+        bottom: 45px;
         font-size: 20px;
         font-weight: 700;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
 
     .main .main_content p.sub_title{
         position: absolute;
-        bottom: 15px;
-        margin-left: 30px;
-        font-size: 10px;
+        bottom: 25px;
+        margin-left: 40px;
+        font-size: 11px;
         font-weight: 700;
     }
 
@@ -336,8 +336,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         font-weight: bold;
         visibility: visible;
         position: absolute;
-        top: 40%;
-        left: 15px;
+        top: 45%;
+        left: 10px;
         font-size: 30px;
         color: white;
         opacity: 0.5;
@@ -351,8 +351,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         font-weight: bold;
         visibility: visible;
         position: absolute;
-        top: 40%;
-        right: 15px;
+        top: 45%;
+        right: 10px;
         font-size: 30px;
         color: white;
         opacity: 0.5;
@@ -360,8 +360,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
     .main .slick-dots {
         position: absolute;
-        width: 200px;
-        height: 30px;
+        width: 148px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -373,6 +372,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         height: 2px;
         margin-right: 5px;
         border: none;
+        cursor: pointer;
     }
 
 
@@ -381,6 +381,225 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         border: none;
         height: 2px;
     }
+
+/* *************** content ******************** */
+
+.content{
+    padding: 0 10px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.content h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(220,218,218);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.content h2 button {
+    position: absolute;
+    border: none;
+    font-size: 10px;
+    bottom: 10px;
+    right: 0;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.content h2 button:hover{
+    background-color: rgb(249,230,177);
+}
+
+.content li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.hot_issue, .best_content{
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.best_content ul li span{
+    display: inline-block;
+    background-color: rgb(249,230,177);
+    border-radius: 3px;
+    line-height: 20px;
+    height: 17px;
+    font-size: 11px;
+    font-family: 'NotoSerifKR';
+    padding: 2px;
+
+}
+
+
+.best_content ul li:nth-child(1) .fa-youtube{color:red}
+.best_content ul li:nth-child(2) .fa-facebook-square{color:rgb(41, 19, 233);}
+.best_content ul li:nth-child(3) .fa-blog{color: rgb(44, 214, 44);}
+.best_content ul li:nth-child(4) .fa-youtube{color:red}
+
+
+
+
+
+
+.best_content ul li:first-child .web_sns_box .fa-youtube {
+    color: red;
+}
+
+.best_content ul li:first-child span,
+.best_content ul li:last-child span
+{
+    background-color: red;
+    color: white;
+}
+
+.best_content ul li:nth-child(3) span
+{
+    background-color: rgb(44, 214, 44);
+    color:white;
+}
+
+.best_content ul li:nth-child(2) span
+{
+    background: rgb(41, 19, 233);
+    color: white;
+}
+
+
+.sns_box .sns{
+    float: left;
+    width: 32%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(220 218 218 / 66%);
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.sns_box .youtube i{
+    color: red;
+}
+
+.sns_box .insta i{
+    color:rgb(41, 19, 233);
+}
+
+.sns_box .blog i{
+    color:  rgb(44, 214, 44);
+}
+
+
+
+.sns_box .youtube,
+.sns_box .insta{
+    margin-right: 2%;
+}
+
+
+.sns_box span{
+    display: none;
+}
+
+
+/* *************** customer_service ******************** */
+
+
+.customer_service{
+    padding: 0 10px;
+    overflow: hidden;
+    margin-top: 40px;   
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.customer_service .service{
+    float: left;
+    width: 49%;
+    height: 150px;
+    background-color:rgb(243, 233, 205);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+.customer_service .service:nth-child(1){margin-right: 2%;}
+.customer_service .service:nth-child(2){margin-bottom: 3%;}
+.customer_service .service:nth-child(3){margin-right: 2%;}
+
+
+.customer_service .service img{
+    z-index: 1;
+    position: relative;
+    transition: all 0.8s;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.customer_service .title{
+    z-index: 1;
+    position: relative;
+    transition: all 0.8s;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+.customer_service .service .box_effet{
+    position: absolute;
+    top: -300px;
+    background-color: rgb(238, 221, 173);
+    height: 300px;width: 100%;
+    color: rgb(238, 221, 173);
+}
+
+
+.customer_service .service:hover .box_effet{
+    position: absolute;
+    top: 0;
+    transition: all 0.8s;
+}
+
+.customer_service .service:hover img{
+    scale: 1.2;
+}
+
+
+
+/* .mainCon2 li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transition: .5s ease;
+    background: #E1D5C3;
+    touch-action: none;
+    pointer-events: none;
+}
+ */
+
+
 
 /* *************** visual_main ******************** */
 
@@ -429,105 +648,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     opacity: 0.5;
 }
 
-/* *************** content ******************** */
-
-.content{
-    padding: 0 10px;
-    overflow: hidden;
-    margin-top: 25px;
-}
-
-.content h2{
-    border-left: 10px solid rgb(237,125,49);
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.content li{
-    height: 40px;
-    line-height: 40px;
-    font-size: 13px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-.hot_issue, .best_content{
-    height: 200px;
-    margin-bottom: 25px;
-}
-
-.best_content ul li span{
-    display: inline-block;
-    background-color: rgb(249,230,177);
-    border-radius: 3px;
-    line-height: 20px;
-    height: 17px;
-    font-size: 11px;
-    font-family: 'NotoSerifKR';
-    padding: 2px;
-
-}
-
-.best_content ul li:first-child span,
-.best_content ul li:last-child span
-{
-    background-color: red;
-    color: white;
-}
-
-.best_content ul li:nth-child(3) span
-{
-    background-color: rgb(44, 214, 44);
-    color:white;
-}
-
-.best_content ul li:nth-child(2) span
-{
-    background: rgb(41, 19, 233);
-    color: white;
-}
-
-
-.sns_box .sns{
-    float: left;
-    width: 32%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background-color: rgb(220,218,218);
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 13px;
-
-}
-
-.sns_box .youtube i{
-    color: red;
-}
-
-.sns_box .insta i{
-    color:rgb(41, 19, 233);
-}
-
-.sns_box .blog i{
-    color:  rgb(44, 214, 44);
-}
-
-
-
-.sns_box .youtube,
-.sns_box .insta{
-    margin-right: 2%;
-}
-
-
-.sns_box span{
-    display: none;
-}
-
-
 
 /* *************** tab_menu_outer ******************** */
 
@@ -535,8 +655,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .tab_menu_outer{
     background-color: rgb(220,218,218);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
     overflow: hidden;
 }
 
@@ -697,12 +816,29 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .product h2{
-    border-left: 10px solid rgb(237,125,49);
     margin-bottom: 10px;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 30px;
+    border-bottom: 1px solid rgb(220,218,218);
+    padding-bottom: 10px;
+    position: relative;
 }
+
+.product h2 button {
+    position: absolute;
+    border: none;
+    font-size: 10px;
+    bottom: 10px;
+    right: 0px;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
 
 /* .product .video{
     margin: 0 auto;
@@ -721,27 +857,48 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     display: none;
 }
 
+
 /* ************* brand_box ******************** */
 
 
 .brand_box{
     overflow: hidden;
     padding: 2%;
-    margin-bottom: 50px;
-}
-
-.brand_box h3 span{
-    display: inline-block;
-    width: 25%;
-    border-bottom: 1px solid rgb(220,218,218);
-}
-
-
-.brand_box h3{
-    text-align: center;
-    font-size: 20px;
     margin-bottom: 20px;
 }
+
+
+.brand_box h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(220,218,218);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.brand_box h2 button {
+    position: absolute;
+    border: none;
+    font-size: 11px;
+    bottom: 10px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(220,218,218);
+    animation: effect 1.5s step-end infinite;
+    margin-left: 10px;
+    width: 70px;
+}
+
+@keyframes effect{
+    50% {opacity: 0;}
+}
+
+
+
 
 .brand_box .brand_top,
 .brand_box .brand_bottom{
@@ -1070,6 +1227,22 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         display :inline;
     }
 
+    /* main */
+
+    .main{
+        margin-top: 100px;
+    }
+
+    .main .main_content p.main_title{
+        width: 350px;
+        bottom: 65px;
+        font-size: 28px;
+    }
+
+    .main .main_content p.sub_title{
+        bottom: 40px;
+        font-size: 13px;
+    }
 
 
     /* tab_menu */
@@ -1141,6 +1314,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     .icon_box{
         margin-top: 8%;
         margin-left: 1%;
+        margin-bottom: 15px;
     }
 
     .icon_box ul{
@@ -1187,8 +1361,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         display: none;
     }
  
-    .product .product_text h2{
-        border-left: 10px solid rgb(237,125,49);
+    .product .product_text h2{  
         margin-bottom: 10px;
 
     }
@@ -1238,6 +1411,44 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .brand_box .brand_top li {
     margin-bottom: 0%;
 }
+
+
+.brand_box ul .brand_img_box .brand_text {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0px;
+}
+
+
+
+/* customer_service */
+.customer_service .service {
+    float: left;
+    width: 25%;
+    border-right: 1px solid  rgb(238, 221, 173);
+    box-sizing: border-box;
+}
+
+.customer_service .service:nth-child(1) {
+    margin-right: 0%;
+}
+
+.customer_service .service:nth-child(3) {
+    margin-right: 0%;
+}
+
+.customer_service .service:nth-child(4) {
+    border-right: none;
+}
+
+
 
 /* footer */
 
@@ -1332,7 +1543,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     .footer,
     .web_banner,
     .web_lnb_menu,
-    .title_box{
+    .title_box,
+    .customer_service_box{
         width: 1024px;
         margin: 0 auto;
     }
@@ -1450,6 +1662,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 
 
+
     
 
     /* side_menu */
@@ -1539,15 +1752,58 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     /* main */
     .main {
         width: 1024px;
-        margin-top: 35px;
+        margin-top: 30px;
     }
 
+    .main img {
+        width: 120%;
+        height: 100%;
+    }
+
+    .main .main_content p.main_title{
+        width: 500px;
+        bottom: 80px;
+        font-size: 40px;
+    }
+
+    .main .main_content p.sub_title{
+        bottom: 45px;
+        font-size: 18px;
+    }
+        
+
+    .main .slick-dots {
+        position: absolute;
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .main .slick-dots button {
+        font-size: 0;
+        float: left;
+        width: 50px;
+        height: 4px;
+        margin-right: 5px;
+        border: none;
+    }
+    
+
+    .main .slick-dots .slick-active button{
+        background-color: black;
+        border: none;
+        height: 4px;
+    }
 
 
     /* visual_main */
 
+
     .visual_main{
-        margin-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        
     }
 
 
@@ -1590,7 +1846,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
     /* content */
     .content {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .content .content_left{
@@ -1607,17 +1863,17 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     color: rgb(171, 169, 169);
 }
 
-    .web_sns_box .sns{
-        width: 100%;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
-        background-color: rgb(220,218,218);
-        border-radius: 20px;
-        font-weight: bold;
-        font-size: 15px;
-        margin-bottom: 5px;
-        transition: all 0.3s;
+    .web_sns_box .sns {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: rgb(220,218,218);
+    /* border-radius: 20px; */
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
     }
 
     .web_sns_box .youtube i{
@@ -1641,6 +1897,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
     /* product */
 
+
     .product .video{
         float: left;
         width: 48%;
@@ -1657,12 +1914,16 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         margin-bottom: 0px;
     }
 
+    .product h2 {
+        margin-top: 1px
+    }
+
 
 
     /* brand */
 
     .brand_box{
-        margin-top: 60px;
+        margin-top: 0px;
         margin-bottom: 65px;
     }
 
@@ -1693,6 +1954,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         width: 43%;
     }
 
+    /* customer_service_box*/
+    .customer_service {
+    padding: 0px;
+    margin-bottom: 40px;
+    }
 
     /* footer */
 
