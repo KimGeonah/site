@@ -619,9 +619,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     visibility: hidden;
 }  
  
-
+/* 배너 화살표 숨김 */
 .visual_main .slick-prev::before{
-    content: "\f053";
+    /* content: "\f053"; */
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     visibility: visible;
@@ -635,7 +635,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .visual_main .slick-next::before{
-    content: "\f054";
+    /* content: "\f054"; */
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     visibility: visible;
@@ -1811,7 +1811,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
    /* icon_box */
 
    .icon_box {
-    margin-top: 6%;
+    margin-top: 4%;
     margin-bottom: 2%;
 }
 
@@ -1868,12 +1868,17 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     height: 65px;
     line-height: 65px;
     text-align: center;
-    background-color: rgb(220,218,218);
+    /* background-color: rgb(220,218,218); */
     /* border-radius: 20px; */
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 5px;
     transition: all 0.3s;
+    border: 1px solid rgb(220,218,218);
+    }
+
+    .web_sns_box .sns a{
+        color: black
     }
 
     .web_sns_box .youtube i{
@@ -1890,13 +1895,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
     .web_sns_box .sns:hover {
         font-size: 17px;
-        background-color: #848383d4;
+        background-color: rgb(220,218,218);
+        border-radius: 0 0px 0px 0px;
     }
 
 
 
     /* product */
 
+
+    .product{
+        margin-bottom: 100px;
+    }
 
     .product .video{
         float: left;
@@ -1956,7 +1966,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
     /* customer_service_box*/
     .customer_service {
-    padding: 0px;
+        padding: 0px;
     }
 
     /* footer */

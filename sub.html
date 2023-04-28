@@ -202,6 +202,8 @@
 
     </nav><!-- title_box -->
 
+    <!-- 비어있는 하트 :<i class="far fa-heart"></i> -->
+    <!-- 꽉 찬 하트 :<i class="fas fa-heart"></i> -->
 
     <div class="content_box">
 
@@ -718,6 +720,42 @@
         content.addClass('effect')
     
         })
+        //마감임박 아이콘 깜박이는 효과
+
+        
+
+        $(function(){
+
+
+        const heart = $('.content_box .content ul li .content_img span i')
+        const addLike = $('.inform .add_like')
+        const removeLike = $('.inform .remove_like')
+
+
+        heart.click(function(){
+            heart.toggleClass('on');
+
+            if (heart.hasClass('on')) {
+                $(this).removeClass('far').addClass('fas');
+                addLike.css('display','block'); 
+                addLike.fadeOut( 1500,'swing');
+            }else{
+                $(this).removeClass('fas').addClass('far');
+                removeLike.css('display','block');
+                removeLike.fadeOut( 1500,'swing');
+            }
+
+            
+
+            })
+        })
+        //찜하기 기능
+
+
+        
+
+
+
     
     
         </script>

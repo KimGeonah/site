@@ -344,6 +344,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 
+
+/* 찜하기 css */
 .content_box .content ul li .content_img span{
     position: absolute;
     bottom: 10px; right: 12px;
@@ -351,14 +353,14 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     font-size: 1.6rem;
 }
 
-
+/* 
 .content_box .content ul li .content_img span i:hover{
     content: "\f004";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-
+ */
 
 
 
@@ -423,6 +425,7 @@ body{
 
 
 .inform .like{
+    display: none;
     position: fixed;
     bottom: 30px;
     width: 80%; height: 50px;
@@ -432,27 +435,25 @@ body{
     z-index: 998;
     margin: 0 10%;
     color:white;
-    opacity: 0;
-    transition: all 1s;
 }
 /* 제이쿼리 사용할때 none을 상단으로 옮길것 */
 
 
 
-.content_box:hover  ~ .inform .add_like{
+/* .content_box:hover  ~ .inform .add_like{
     animation: fadeout 3s;
     display: block;
-}
-
+} */
+/* 
 @keyframes fadeout{
     from{
         opacity: 1;
     }to{
         opacity: 0;
     }
-}
+} */
 
-
+ 
 /* ************* page_num ******************** */
 
 .page_num ul{
@@ -1124,18 +1125,40 @@ body{
     }
 
 
-.inform .like{
+    /* inform */
+
+
+    
+    
+    .inform{
+        width: 1024px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .inform .like{
+        position: fixed;
+        bottom: 30px;
+        width: 824px;
+        margin: 0 100px;
+    }
+
+
+
+
+/* .inform .like{
 
     display: none;
-
+ */
 }
 /* 제이쿼리 사용할때 none을 상단으로 옮길것 */
 
 
 
-.content_box:hover  ~ .inform .add_like{
+/* .content_box:hover  ~ .inform .add_like{
     display: none;
-}
+} */
 
 
 
