@@ -571,8 +571,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     color: rgb(238, 221, 173);
 }
 
+/* 테스트 */
 
-.customer_service .service:hover .box_effet{
+/* .customer_service .service:hover .box_effet{
     position: absolute;
     top: 0;
     transition: all 0.8s;
@@ -581,7 +582,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .customer_service .service:hover img{
     scale: 1.2;
 }
-
+ */
 
 
 /* .mainCon2 li::after {
