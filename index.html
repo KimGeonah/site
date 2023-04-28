@@ -325,7 +325,7 @@
 
 
         <div class="tab_menu_box">
-            <label for="tab_01" class="tab_menu menu01">마감임박</label>
+            <label for="tab_01" class="tab_menu menu01 active">마감임박</label>
             <label for="tab_02" class="tab_menu menu02">지금인기</label>
             <label for="tab_03" class="tab_menu menu03">오늘오픈</label>
         </div>
@@ -466,11 +466,11 @@
 
     <section class="product">
 
-        <h2 class="product_title">&nbsp;이달의 인플루언서 : 곽튜브                
+        <h2 class="product_title">&nbsp;인플루언서 톡톡 : 곽튜브                
             <a href="sub.html"><button>MORE +</button></a> 
         </h2>
         <div class="video">
-            <video src="./img/video.mp4" autoplay controls loop muted playsinline></video>
+            <video src="./img/video.mp4" autoplay loop muted playsinline></video>
         </div>
 
 
@@ -600,6 +600,8 @@
                 speed:2000
             });
         });
+        //상단 메인 슬릭
+
 
 
         $(document).ready(function () {
@@ -608,24 +610,57 @@
                 speed:4000
             });
         });
+        //배너 슬릭
+
 
         $(document).ready(function () {
             $('.content01').slick({
-                autoplay: true
+                autoplay: true,
+                dots:true,
+                variableWidth: true,
+                slidesToshow:1,
+                slidesToScroll:1,
+                centerMode:true,
+                centerPadding:'0px'
             });
         });
 
         $(document).ready(function () {
             $('.content02').slick({
-                autoplay: true
+                autoplay: true,
+                variableWidth: true
             });
         });
 
         $(document).ready(function () {
             $('.content03').slick({
-                autoplay: true
+                autoplay: true,
+                variableWidth: true
             });
         });
+        //탭메뉴 슬릭 3단
+
+
+        $(function(){
+
+            const tabMenu = $('.tab_menu_box .tab_menu')
+
+            tabMenu.click(function(){
+                
+
+             if(tabMenu.hasClass('active')){
+                tabMenu.removeClass('active')
+                $(this).toggleClass('active');
+                
+            }else{
+                $(this).addClass('active');
+            }
+            })
+
+        })
+        //탭메뉴_이동시 메뉴 깜박임효과
+
+
 
 
     </script>
