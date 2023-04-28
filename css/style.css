@@ -725,14 +725,14 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .content_box{
     float: left;
-    width: 50%;
-    margin:0 10%;
+    width: 60%;
+    margin:0 5%;
 }
 
 /* .content_slick{width: 100%;} */
 
 .content_slick img{
-    width: 50%;
+    width: 65%;
 }
 
 .content_box .slick-arrow{
@@ -794,20 +794,26 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .tab_menu .slick-dots {
     position: absolute;
-    top: 10px;
+    top:10px;
+    width: 50%;
+    margin: 5px 25% 0;
+
 } 
  
-
+ 
 
 .tab_menu .slick-dots button {
     font-size: 0;
     float: left;
-    width: 32px;
+    width: 20%;
     height: 2px;
-    margin-right: 5px;
+    margin-right:5%;
     border: none;
     cursor: pointer;
 }
+
+
+
 
 
 .tab_menu .slick-dots .slick-active button{
@@ -957,7 +963,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .brand_box .brand_bottom li{
     float: left;
     width: 49%;
-    overflow: hidden;
+    overflow: hidden;    
+    border-radius: 5px;
 }
 
 .brand_box .brand_top li{
@@ -977,7 +984,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .brand_box ul li .brand_img_box img{
     width: 100%;
-
     height: auto;
     display: block;
 }
