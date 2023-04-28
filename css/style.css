@@ -409,6 +409,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     line-height: 25px;
     font-weight: bold;
     border-radius: 5px;
+    color: black;
 }
 
 
@@ -836,6 +837,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     line-height: 25px;
     font-weight: bold;
     border-radius: 5px;
+    color: black;
 }
 
 
@@ -891,6 +893,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     animation: effect 1.5s step-end infinite;
     margin-left: 10px;
     width: 70px;
+    color: black;
 }
 
 @keyframes effect{
@@ -973,6 +976,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     right: 10px;
     top: 30px;
     font-size: 13px;
+    color: black;
 }
 
 .footer ul li{
