@@ -20,9 +20,6 @@
 <body>
 
 
-
-
-
     <header class="header_outer">
         <header class="header">
 
@@ -183,6 +180,28 @@
     </header><!-- web_header_outer -->
 
 
+    <section class="popup">
+    <input type="checkbox" id="layer_popup">
+    
+    <label for="layer_popup">
+        <p>마케팅 비용 문의</p>
+        <img src="./img/popup_icon01.png" alt=""> 
+        
+    </label>
+
+    <div id="layer_bg"> 
+        <div id="popup"> 
+            <h2>
+                가격 안내  
+                <label for="layer_popup"><i class="fas fa-times"></i></label>
+            </h2>
+            <img src="./img/pop_up.jpg" alt="">
+        </div>
+    </div>
+    </section><!-- popup -->
+
+
+
     <div class="main">
         <div class="main01 main_content">
             <img src="./img/visual_main01.png" alt="main01">
@@ -207,7 +226,8 @@
             <p class="main_title">4월 리뷰왕 선발 대회!</p>
             <p class="sub_title">[EVENT] 신선한 리뷰 남기고 리뷰왕에 도전해 보세요!</p>
         </div>
-    </div>
+    </div><!-- main -->
+
 
 
 
@@ -264,12 +284,18 @@
 
     </div><!-- content -->
 
+
     <div class="visual_main">
         <div><img src="./img/main_pc_01.jpg"></div>
         <div><img src="./img/main_pc_02.jpg"></div>
         <div><img src="./img/main_pc_03.jpg"></div>
     </div><!-- visual_main -->
 
+    <div class="visual_main_mobile">
+        <div><img src="./img/main_tap_01.jpg"></div>
+        <div><img src="./img/main_tap_02.jpg"></div>
+        <div><img src="./img/main_tap_03.jpg"></div>
+    </div><!-- visual_main_mobile -->
 
 
     <section class="brand_box">
@@ -315,14 +341,13 @@
     </section><!-- brand_box -->   
 
 
-
     <div class="tab_menu_outer">
 
         <div class="tab_menu">
         <input type="radio" name="tab" id="tab_01" checked>
         <input type="radio" name="tab" id="tab_02">
         <input type="radio" name="tab" id="tab_03">
-
+            
 
         <div class="tab_menu_box">
             <label for="tab_01" class="tab_menu menu01 active">마감임박</label>
@@ -358,7 +383,7 @@
                     <p class="title_sub">70만원 상당의 객실 숙박권</p>
                 </div>
 
-            </div>
+            </div><!-- 마감임박 -->
 
             
 
@@ -389,7 +414,7 @@
                     <p class="title_sub">서큘레이터 선풍기 1대</p>
                 </div>
 
-            </div>
+            </div><!-- 지금인기 -->
 
 
             <div class="content03 content_slick">
@@ -416,11 +441,11 @@
                     <p class="title">[도깨비] 뚝딱 미니 스팀오븐</p>
                     <p class="title_sub">미니 스팀오븐 1개</p>
                 </div>
-            </div>
+            </div><!-- 오늘오픈 -->
 
+        </div><!-- content_box -->
         </div>
 
-        </div>
 
     </div><!-- tab_menu_outer -->
 
@@ -464,6 +489,7 @@
 
     </section><!-- icon_box -->
 
+
     <section class="product">
 
         <h2 class="product_title">&nbsp;인플루언서 톡톡 : 곽튜브                
@@ -486,7 +512,6 @@
     </div>
 
     </section> <!-- product -->
-
 
 
     <aside class="customer_service_box">
@@ -515,8 +540,7 @@
                     <div class="box_effet">효과</div>
                 </li>
         </ul><!-- customer_service -->
-    </aside>
-    
+    </aside><!-- customer_Service_box -->
 
 
     <div class="footer_outer" id="footer">
@@ -601,8 +625,7 @@
             });
         });
         //상단 메인 슬릭
-
-
+        
 
         $(document).ready(function () {
             $('.visual_main').slick({
@@ -612,30 +635,45 @@
         });
         //배너 슬릭
 
+        $(document).ready(function () {
+            $('.visual_main_mobile').slick({
+                autoplay: true,
+                speed:4000
+            });
+        });
+        //배너 슬릭
+
+
 
         $(document).ready(function () {
             $('.content01').slick({
                 autoplay: true,
                 dots:true,
-                variableWidth: true/* ,
-                slidesToshow:1,
-                slidesToScroll:1,
-                centerMode:true,
-                centerPadding:'0px'  */
+                variableWidth: true 
             });
         });
 
         $(document).ready(function () {
             $('.content02').slick({
                 autoplay: true,
-                variableWidth: true
+                dots:true,
+                variableWidth: true /* ,
+                slidesToshow:1,
+                slidesToScroll:1,
+                centerMode:true,
+                centerPadding:'0px'   */
             });
         });
 
         $(document).ready(function () {
             $('.content03').slick({
                 autoplay: true,
-                variableWidth: true
+                dots:true,
+                variableWidth: true/*  ,
+                slidesToshow:1,
+                slidesToScroll:1,
+                centerMode:true,
+                centerPadding:'0px'   */
             });
         });
         //탭메뉴 슬릭 3단
@@ -661,6 +699,26 @@
         //탭메뉴_이동시 메뉴 깜박임효과
 
 
+        $(function(){
+
+            const tabLi = $('.web_lnb_menu_outer ul li')
+            const sheet = $('.lnb_menu_down_box')
+
+            tabLi.mouseover(function(){
+                sheet.stop().animate({
+                    height : 490
+                },300)
+            })
+
+            
+            tabLi.mouseout(function(){
+                sheet.stop().animate({
+                    height : 0
+                },300)
+            })
+
+        })
+        //풀다운메뉴
 
 
     </script>

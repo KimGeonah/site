@@ -753,7 +753,26 @@
 
 
         
+        $(function(){
 
+const tabLi = $('.web_lnb_menu_outer ul li')
+const sheet = $('.lnb_menu_down_box')
+
+tabLi.mouseover(function(){
+    sheet.stop().animate({
+        height : 490
+    },300)
+})
+
+
+tabLi.mouseout(function(){
+    sheet.stop().animate({
+        height : 0
+    },300)
+})
+
+})
+//풀다운메뉴
 
 
     
